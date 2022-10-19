@@ -1,0 +1,101 @@
+@tailwind utilities;
+
+/*  COLORS */
+:root {
+  --color-withe: #fff;
+  --color-black: #000;
+  --color-boulder: #777;
+  --color-silver: #c4c4c4;
+  --color-mercury: #e5e5e5;
+  --color-alabaster: #f7f7f7;
+  --color-fernGreen: #4e7440;
+  --color-hippieGreen: #608951;
+}
+
+@layer utilities {
+  .banner {
+    position: relative;
+    top: 94px;
+    width: 95%;
+    height: 749px;
+    margin: auto;
+    margin-bottom: calc(160px + (260 - 160) * ((100vw - 320px) / (1440 - 320)));
+    background-image: url(../../assets/images/home/img-main.png);
+    background-size: 75% 100%;
+    background-position-x: 80%;
+    background-repeat: no-repeat;
+  }
+
+  .banner__title {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 244px;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 77px;
+    /* mix-blend-mode:multiply; */
+  }
+
+  .banner__txt {
+    margin: 0;
+    position: absolute;
+    left: 225px;
+    top: 322px;
+    font-family: "Miama Nueva";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 53px;
+    color: var(--color-fernGreen);
+  }
+
+  .banner__description {
+    margin: 0;
+    position: absolute;
+    max-width: 360px;
+    left: 0;
+    top: 379px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* mix-blend-mode:difference; */
+  }
+
+  .banner__link {
+    margin: 0;
+    padding: 12px 32px;
+    position: absolute;
+    left: 0;
+    top: 479px;
+    background: var(--color-withe);
+    border: 2px solid var(--color-fernGreen);
+    color: var(--color-fernGreen);
+    line-height: 24px;
+    transition: 0.3s;
+    transition-property: background-color, color, border-color;
+  }
+
+  .banner__link:hover,
+  .banner__link:active {
+    background-color: var(--color-hippieGreen);
+    color: var(--color-withe);
+    border-color: var(--color-hippieGreen);
+  }
+  .banner__list-social {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+  }
+
+  .banner__item-social {
+    margin: 0;
+  }
+
+  .banner__item-social:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
