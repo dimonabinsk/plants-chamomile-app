@@ -13,31 +13,31 @@ const SocialNetwork = ({ styles }) => {
   return (
     <div className={styles}>
       <ul>
-        <li>
+        <li className="m-3">
           <Link to="#">
             <FontAwesomeIcon
               icon={faTelegram}
               size="2x"
               title="Telegram"
-              className=" hover:text-blue-400 m-3 transition-colors"
+              className=" hover:text-blue-400 transition-colors"
             />
           </Link>
         </li>
-        <li>
+        <li className="m-3">
           <Link to="#">
             <FontAwesomeIcon
               icon={faSquareOdnoklassniki}
               size="2x"
-              className=" hover:text-orange-400 m-3 transition-colors"
+              className=" hover:text-orange-400 transition-colors"
             />
           </Link>
         </li>
-        <li>
+        <li className="m-3">
           <Link to="#">
             <FontAwesomeIcon
               icon={faVk}
               size="2x"
-              className=" hover:text-blue-500 m-3 transition-colors"
+              className=" hover:text-blue-500 transition-colors"
             />
           </Link>
         </li>

@@ -1,0 +1,76 @@
+{
+    "page": [
+        {
+            "id": "f98838e9a7cfba2079bd0b7436ce2696",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Алоэ Вера",
+            "images": ["../images/catalog/aloe-vera.jpg"],
+            "price": 100
+        },
+        {
+            "id": "5ce089a852a0c5a43f6483fdd635d84d",
+            "type": "Комнатные цветы",
+            "genus": "Сансевиерия",
+            "name": "Змеиное растение",
+            "images": ["../images/catalog/snake.jpg"],
+            "price": 100
+        },
+        {
+            "id": "12754e74e08c6e3a7ced329a477dcb13",
+            "type": "Комнатные цветы",
+            "genus": "Ароидные",
+            "name": "Монстера",
+            "images": ["../images/catalog/monstera.jpg"],
+            "price": 100
+        },
+        {
+            "id": "5cd3148d5878b5fd2d3d702a1ca307bd",
+            "type": "Комнатные цветы",
+            "genus": "Древесные",
+            "name": "Стрелиция Николая",
+            "images": ["../images/catalog/strelitzia-nicolai.jpg"],
+            "price": 100
+        },
+        {
+            "id": "24c585ff15a3599c16a7b315ffd96e7a",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Замиокулькас",
+            "images": ["../images/catalog/zamioculcas.jpg"],
+            "price": 100
+        },
+        {
+            "id": "8e71c676d723240191fbd142f4e98887",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Кактус",
+            "images": ["../images/catalog/cactus.jpg"],
+            "price": 100
+        },
+        {
+            "id": "bb638d86f08f65edcf0c2d9a911ccb1b",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Суккулент",
+            "images": ["../images/catalog/succulent.jpg"],
+            "price": 100
+        },
+        {
+            "id": "2e8a3408be65e914d6fb98e722b8351c",
+            "type": "Оранжерея",
+            "genus": "Саговники",
+            "name": "Саговник",
+            "images": ["../images/catalog/cycad.jpg"],
+            "price": 100
+        },
+        {
+            "id": "efc182d81e4af99ed41116d2d10f340b",
+            "type": "Оранжерея",
+            "genus": "Папоротники",
+            "name": "Даваллия",
+            "images": ["../images/catalog/davallia.jpg"],
+            "price": 100
+        }
+    ]
+}

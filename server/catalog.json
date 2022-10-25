@@ -1,0 +1,100 @@
+{
+    "catalog": [
+        {
+            "id": "f98838e9a7cfba2079bd0b7436ce2696",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Алоэ Вера",
+            "images": ["http://localhost:9000/images/catalog/aloe-vera-1.jpg"],
+            "price": 100
+        },
+        {
+            "id": "5ce089a852a0c5a43f6483fdd635d84d",
+            "type": "Комнатные цветы",
+            "genus": "Сансевиерия",
+            "name": "Змеиное растение",
+            "images": ["http://localhost:9000/images/catalog/snake.jpg"],
+            "price": 100
+        },
+        {
+            "id": "12754e74e08c6e3a7ced329a477dcb13",
+            "type": "Комнатные цветы",
+            "genus": "Ароидные",
+            "name": "Монстера",
+            "images": ["http://localhost:9000/images/catalog/monstera.jpg"],
+            "price": 100
+        },
+        {
+            "id": "5cd3148d5878b5fd2d3d702a1ca307bd",
+            "type": "Комнатные цветы",
+            "genus": "Древесные",
+            "name": "Стрелиция Николая",
+            "images": ["http://localhost:9000/images/catalog/strelitzia-nicolai.jpg"],
+            "price": 100
+        },
+        {
+            "id": "24c585ff15a3599c16a7b315ffd96e7a",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Замиокулькас",
+            "images": ["http://localhost:9000/images/catalog/zamioculcas.jpg"],
+            "price": 100
+        },
+        {
+            "id": "8e71c676d723240191fbd142f4e98887",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Кактус",
+            "images": ["http://localhost:9000/images/catalog/cactus.jpg"],
+            "price": 100
+        },
+        {
+            "id": "bb638d86f08f65edcf0c2d9a911ccb1b",
+            "type": "Комнатные цветы",
+            "genus": "Суккуленты",
+            "name": "Суккулент",
+            "images": ["http://localhost:9000/images/catalog/succulent.jpg"],
+            "price": 100
+        },
+        {
+            "id": "2e8a3408be65e914d6fb98e722b8351c",
+            "type": "Оранжерея",
+            "genus": "Саговники",
+            "name": "Саговник",
+            "images": ["http://localhost:9000/images/catalog/cycad.jpg"],
+            "price": 100
+        },
+        {
+            "id": "efc182d81e4af99ed41116d2d10f340b",
+            "type": "Оранжерея",
+            "genus": "Папоротники",
+            "name": "Даваллия",
+            "images": ["http://localhost:9000/images/catalog/davallia.jpg"],
+            "price": 100
+        },
+        {
+            "id": "b9755dbd3abe11f488a86be6383ce0fd",
+            "type": "Комнатные цветы",
+            "genus": "Мареновые",
+            "name": "Нертера",
+            "images": ["http://localhost:9000/images/catalog/Nertera_granadensis.jpg"],
+            "price": 100
+        },
+        {
+            "id": "5095bce6324744db88cfb6a45354a12a",
+            "type": "Комнатные цветы",
+            "genus": "Спаржевые",
+            "name": "Перистый аспарагус",
+            "images": ["http://localhost:9000/images/catalog/Feathery_asparagus.jpg"],
+            "price": 100
+        },
+        {
+            "id": "3eb391631619fc2f47cff6c9c8bed71a",
+            "type": "Оранжерея",
+            "genus": "Мальтовые",
+            "name": "Гибискус болотный",
+            "images": ["http://localhost:9000/images/catalog/hibiscus_marsh.jpg"],
+            "price": 100
+        }
+    ]
+}

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useDarkMode } from "../../hooks/useDarkMode";
 import {
   faBagShopping,
   faUser,
@@ -12,16 +13,26 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 
 import LogoSvg from "./Logo";
-import { Burger } from "../../utility/burger";
+import { Burger } from "../../utility/burger/burger";
 import SwitchTheme from "react-switch";
 import NavBar from "./NavBar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
+  const [isDarkMode, setDarkMode] = useDarkMode();
   const [heightHeader, setHeightHeader] = useState("h-16");
   const [burgerActive, setBurgerActive] = useState("");
   const [switchState, setSwitchState] = useState(true);
+
+  const handlerModeTheme = () => {
+    if (isDarkMode) {
+      setDarkMode();
+      setSwitchState(!switchState);
+    }
+    setDarkMode();
+    setSwitchState(!switchState);
+  };
 
   const handlerClickLink = () => {
     setHeightHeader("h-16");
@@ -31,27 +42,13 @@ const Header = () => {
   };
 
   useEffect(() => {
-    localStorage.theme === "dark"
-      ? setSwitchState(false)
-      : setSwitchState(true);
-  }, []);
-
-  const handlerButtonTheme = () => {
-    if (localStorage.theme === "dark") {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
-      setSwitchState(true);
-    } else {
-      localStorage.theme = "dark";
-      document.documentElement.classList.add("dark");
-      setSwitchState(false);
-    }
-  };
+    isDarkMode ? setSwitchState(false) : setSwitchState(true);
+  }, [isDarkMode]);
 
   return (
     <>
       <header
-        className={`bg-white dark:bg-neutral-600 fixed top-0 left-0 z-10 w-full overflow-hidden lg:flex ${heightHeader} lg:items-center lg:justify-between lg:pr-5 lg:h-16 pl-5 `}
+        className={`header bg-white dark:bg-neutral-600 fixed top-0 left-0 z-20 w-full overflow-hidden lg:flex ${heightHeader} lg:items-center lg:justify-between px-4 sm:pr-0 lg:p-5 lg:h-16 `}
       >
         <Burger
           height={setHeightHeader}
@@ -68,7 +65,7 @@ const Header = () => {
               type={"search"}
               placeholder="Поиск"
               aria-label="Search"
-              className="form-input pt-1 pb-1 border-slate-400 rounded bg-slate-200 dark:bg-[#1c1c1c] dark:text-gray-50"
+              className="form-input pt-1 pb-1 focus:border-transparent border-slate-400 rounded bg-slate-200 dark:bg-[#1c1c1c] dark:text-gray-50"
             />
             <button className="ml-1">
               <FontAwesomeIcon
@@ -91,11 +88,11 @@ const Header = () => {
 
           <span className="shop-bag--quantity dark:text-white">0</span>
         </div>
-        <div className="flex flex-col justify-center items-center mt-4 sm:flex-row sm:absolute sm:top-6 sm:right-20 sm:mt-0 sm:ml-4 lg:static">
+        <div className="flex flex-col justify-center items-center mt-4 sm:flex-row sm:absolute sm:top-5 sm:right-20 sm:mt-0 sm:ml-4 lg:static">
           <SwitchTheme
-            onChange={handlerButtonTheme}
+            onChange={handlerModeTheme}
             checked={switchState}
-            onColor={"#00cc00"}
+            onColor={"#ffae42"}
             checkedIcon={
               <FontAwesomeIcon
                 icon={faSun}

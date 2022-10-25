@@ -6,7 +6,7 @@ const NavBar = ({ onHandlerClick }) => {
   const linkList = [
     {
       id: 1,
-      name: "Каталог",
+      name: "Каталог цветов",
       path: "/catalog",
     },
     {
@@ -30,18 +30,18 @@ const NavBar = ({ onHandlerClick }) => {
     <div className={"lg:flex-1"}>
       <nav
         className={
-          "nav-link flex flex-col justify-center items-center lg:flex-row "
+          "nav-link flex flex-col justify-center items-center lg:flex-row"
         }
       >
         {linkList.map(({ id, name, path }, i) => (
           <NavLink
             key={id}
             to={path}
-            className={`text-[30px] lg:text-base ${
+            className={`text-[30px] lg:text-base hover:text-[#0f0] ${
               linkList.length - 1 === i ? "" : "lg:mr-2"
             }`}
             onClick={onHandlerClick}
-            activeClassName="active-link"
+            activeClassName="text-[#00cc00]"
           >
             {name}
           </NavLink>

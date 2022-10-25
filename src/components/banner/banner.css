@@ -3,99 +3,55 @@
 /*  COLORS */
 :root {
   --color-withe: #fff;
-  --color-black: #000;
+  --color-black: #1c1c1c;
   --color-boulder: #777;
   --color-silver: #c4c4c4;
   --color-mercury: #e5e5e5;
   --color-alabaster: #f7f7f7;
-  --color-fernGreen: #4e7440;
-  --color-hippieGreen: #608951;
+  --color-green: #0c0;
+  --position-banner: calc(100% + (60 - 100) * ((100vw - 320px) / (1440 - 320)));
 }
 
 @layer utilities {
-  .banner {
-    position: relative;
-    top: 94px;
-    width: 95%;
-    height: 749px;
-    margin: auto;
-    margin-bottom: calc(160px + (260 - 160) * ((100vw - 320px) / (1440 - 320)));
-    background-image: url(../../assets/images/home/img-main.png);
-    background-size: 75% 100%;
-    background-position-x: 80%;
+ 
+  .banner-img {
+    background: url("http://localhost:9000/images/banner/banner_img.jpg"), var(--color-silver);
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .banner__title {
-    margin: 0;
-    position: absolute;
-    left: 0;
-    top: 244px;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 77px;
-    /* mix-blend-mode:multiply; */
+  .banner-title {
+    font-size: calc(28px + (60 - 28) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(35px + (77 - 35) * ((100vw - 320px) / (1440 - 320)));
   }
 
-  .banner__txt {
-    margin: 0;
-    position: absolute;
-    left: 225px;
-    top: 322px;
+  .banner-txt {
     font-family: "Miama Nueva";
+    white-space: nowrap;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
-    line-height: 53px;
-    color: var(--color-fernGreen);
+    font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(40px + (100 - 40) * ((100vw - 320px) / (1440 - 320)));
+    position: absolute;
+
   }
 
-  .banner__description {
-    margin: 0;
-    position: absolute;
-    max-width: 360px;
-    left: 0;
-    top: 379px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    /* mix-blend-mode:difference; */
-  }
 
-  .banner__link {
-    margin: 0;
-    padding: 12px 32px;
-    position: absolute;
-    left: 0;
-    top: 479px;
+  .banner-link {
     background: var(--color-withe);
-    border: 2px solid var(--color-fernGreen);
-    color: var(--color-fernGreen);
+    border: 2px solid var(--color-hippieGreen);
+    color: var(--color-black);
     line-height: 24px;
+    transition-property: background-color, color;
     transition: 0.3s;
-    transition-property: background-color, color, border-color;
+
+    
   }
 
-  .banner__link:hover,
-  .banner__link:active {
+  .banner-link:hover,
+  .banner-link:active {
     background-color: var(--color-hippieGreen);
     color: var(--color-withe);
-    border-color: var(--color-hippieGreen);
-  }
-  .banner__list-social {
-    margin: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: right;
   }
 
-  .banner__item-social {
-    margin: 0;
-  }
-
-  .banner__item-social:not(:last-child) {
-    margin-bottom: 20px;
-  }
 }
