@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @font-face {
   font-family: "Futura Bk RT";
   font-weight: 400;
@@ -78,14 +76,10 @@
 }
 
 @layer utilities {
-
-  
   .nav-link {
     font-family: "Futura Bk RT";
   }
-  
-  
-  
+
   [class^="_icon-"]::before,
   [class*=" _icon-"]::before {
     font-family: "icomoon" !important;
@@ -97,11 +91,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
+
   /* ._icon-logo ::before {
     content: var(--icon-logo);
   } */
-  
+
   /* ._icon-ico-tw::before {
     content: "\e904";
     padding: 2px;
@@ -120,15 +114,15 @@
     color: var(--color-hippieGreen);
     border: 2px solid var(--color-hippieGreen);
   } */
-  
+
   ._icon-ico-plus::before {
     content: var(--icon-ico-plus);
   }
-  
+
   ._icon-ico-minus::before {
     content: var(--icon-ico-minus);
   }
-  
+
   /* ._icon-ico-inst::before {
     content: var(--icon-ico-inst);
     color: var(--color-black);
@@ -148,11 +142,11 @@
     color: var(--color-hippieGreen);
     border: 2px solid var(--color-hippieGreen);
   } */
-  
+
   ._icon-ico-filter::before {
     content: var(--icon-ico-filter);
   }
-  
+
   /* ._icon-ico-fb::before {
     content: var(--icon-ico-fb);
     padding: 2px;
@@ -171,37 +165,37 @@
     color: var(--color-hippieGreen);
     border: 2px solid var(--color-hippieGreen);
   } */
-  
+
   ._icon-ico-cross::before {
     content: var(--icon-ico-cross);
   }
-  
+
   ._icon-ico-arrow-left::before {
     content: var(--icon-ico-arrow-left);
   }
-  
+
   ._icon-ico-arrow-little::before {
     content: var(--icon-ico-arrow-little);
     color: #4e7440;
     font-size: 10px;
   }
-  
+
   ._icon-ico-arrow-right::before {
     content: var(--icon-ico-arrow-right);
   }
-  
+
   ._icon-ico-arrow-up::before {
     content: var(--icon-ico-arrow-up);
   }
-  
+
   ._icon-ico-arrow-down::before {
     content: var(--icon-ico-arrow-down);
   }
-  
+
   ._icon-ico-arrow-big::before {
     content: var(--icon-ico-arrow-big);
   }
-  
+
   /* ._icon-ico-shop-bag::before {
     content: var(--icon-ico-shop-bag);
     font-size: 22px;
@@ -226,7 +220,7 @@
     border: none;
     background: transparent;
   } */
-  
+
   /* ._icon-ico-shop-bag {
     position: relative;
   }
@@ -234,7 +228,7 @@
     position: absolute;
     right: 12px;
   } */
-  
+
   /* ._icon-ico-user::before {
     content: var(--icon-ico-user);
     font-size: 24px;
@@ -267,20 +261,15 @@
   ._icon-ico-search:focus::before {
     border: 2px solid var(--color-black);
   } */
-  
+
   .nav-link a {
     padding: 2px;
     /* border: 2px solid rgba(0, 0, 0, 0); */
     transition: 0.3s;
   }
-  
-  
+
   .active-link {
     color: var(--color-hippieGreen);
     /* border-bottom: 2px solid var(--color-hippieGreen) !important; */
   }
 }
-
-
-
-

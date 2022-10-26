@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
 import Loader from "../utility/loader/loader";
 import GetImage from "../components/getImages/getImage";
 import Pagination from "../components/pagination/Pagination";
-import { paginate } from "../utility/pagination/pagination";
+// import { paginate } from "../utility/pagination/pagination";
 
 const PlantsCatalog = () => {
   const [catalog, setCatalog] = useState([]);
   const [isFetching, setFetching] = useState(false);
-  const pageSize = 4;
+  const PageSize = 1;
   const [currentPage, setCurrentPage] = useState(1);
   const count = catalog.length;
 
-  const handlerPageChange = (pageIndex) => {
+  const handlePageChange = (pageIndex) => {
     setCurrentPage(pageIndex);
   };
 
@@ -31,7 +31,11 @@ const PlantsCatalog = () => {
     count > 0 ? setFetching(false) : setFetching(true);
   }, [count]);
 
-  const catalogCrop = paginate(catalog, currentPage, pageSize);
+  const catalogCrop = useMemo(() => {
+    const firstPageIndex = (currentPage - 1) * PageSize;
+    const lastPageIndex = firstPageIndex + PageSize;
+    return catalog.slice(firstPageIndex, lastPageIndex);
+  }, [currentPage, catalog]);
 
   return isFetching ? (
     <Loader />
@@ -65,12 +69,12 @@ const PlantsCatalog = () => {
         </div>
       </div>
       <Pagination
-        itemsCount={count}
-        pageSize={pageSize}
+        totalCount={count}
         currentPage={currentPage}
-        onPageChange={handlerPageChange}
+        pageSize={PageSize}
+        onPageChange={handlePageChange}
       />
-      <div className=" h-60"></div>
+      <div className=" h-96"></div>
     </>
   );
 };
