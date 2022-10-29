@@ -5,9 +5,8 @@ import PlantsCatalog from "./Plants.catalog";
 // import PropTypes from "prop-types";
 
 const Plants = () => {
-
   const { plantId } = useParams();
-//   console.log(plantId);
+  //   console.log(plantId);
   return plantId ? <PlantPage id={plantId} /> : <PlantsCatalog />;
 };
 

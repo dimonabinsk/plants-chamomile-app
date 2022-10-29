@@ -29,12 +29,12 @@ const PlantPage = ({ id }) => {
   return (
     isPlant &&
     isPlant.map((item) => (
-      <div key={item.id} className=" relative top-20 z-20 w-80 h-96">
-        <div className="w-full h-full">
+      <div key={item.id} className=" relative top-20 z-20 h-96 w-80">
+        <div className="h-full w-full">
           <GetImage
             src={`${item.images[0]}`}
             alt={`${item.name}`}
-            className="w-full h-full"
+            className="h-full w-full"
           />
         </div>
         <div>

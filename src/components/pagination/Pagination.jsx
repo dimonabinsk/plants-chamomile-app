@@ -79,7 +79,7 @@ const Pagination = ({
         <li className="hidden px-1 sm:block">
           <button
             className={`relative rounded border-0 bg-transparent py-1.5 px-3 outline-none transition-all duration-300 focus:shadow-none  ${
-              currentPage >= lastPage
+              currentPage === lastPage
                 ? "pointer-events-none text-gray-500"
                 : "text-[#1c1c1c] hover:bg-[#0d0] hover:text-white dark:text-white dark:hover:text-[#1c1c1c]"
             }`}

@@ -8,7 +8,6 @@ import {
   faSquareOdnoklassniki,
 } from "@fortawesome/free-brands-svg-icons";
 
-
 const SocialNetwork = ({ styles }) => {
   return (
     <div className={styles}>
@@ -19,7 +18,7 @@ const SocialNetwork = ({ styles }) => {
               icon={faTelegram}
               size="2x"
               title="Telegram"
-              className=" hover:text-blue-400 transition-colors"
+              className=" transition-colors hover:text-blue-400"
             />
           </Link>
         </li>
@@ -28,7 +27,7 @@ const SocialNetwork = ({ styles }) => {
             <FontAwesomeIcon
               icon={faSquareOdnoklassniki}
               size="2x"
-              className=" hover:text-orange-400 transition-colors"
+              className=" transition-colors hover:text-orange-400"
             />
           </Link>
         </li>
@@ -37,7 +36,7 @@ const SocialNetwork = ({ styles }) => {
             <FontAwesomeIcon
               icon={faVk}
               size="2x"
-              className=" hover:text-blue-500 transition-colors"
+              className=" transition-colors hover:text-blue-500"
             />
           </Link>
         </li>

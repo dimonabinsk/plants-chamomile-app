@@ -6,23 +6,23 @@ import "./banner.css";
 
 const Banner = () => {
   return (
-    <section className=" relative top-24 px-4 sm:px-5 z-10">
-      <div className="banner-img absolute top-[200px] sm:top-0 right-0 sm:right-auto sm:left-[20vw] w-[80vw] h-[80vw] sm:w-[70vw] sm:h-[50vw] lg:h-[40vw] rounded "></div>
+    <section className=" relative top-24 z-10 px-4 sm:px-5">
+      <div className="banner-img absolute top-[200px] right-0 h-[80vw] w-[80vw] rounded sm:top-0 sm:right-auto sm:left-[20vw] sm:h-[50vw] sm:w-[70vw] lg:h-[40vw] "></div>
       <div className="relative max-w-lg sm:top-[15vw]">
-        <h1 className=" banner-title absolute sm:top-[-3vw] dark:text-white dark:mix-blend-difference whitespace-nowrap">
+        <h1 className=" banner-title absolute whitespace-nowrap dark:text-white dark:mix-blend-difference sm:top-[-3vw]">
           Комнатные растения
         </h1>
-        <span className="banner-txt  text-[#00cc00] top-[10vw] sm:top-[3vw] left-[30vw] sm:left-[20vw]">
+        <span className="banner-txt  top-[10vw] left-[30vw] text-[#00cc00] sm:top-[3vw] sm:left-[20vw]">
           с любовью...
         </span>
-        <p className="absolute leading-[24px] top-[20vw] sm:top-[15vw] lg:top-40 dark:text-white dark:mix-blend-difference">
+        <p className="absolute top-[20vw] leading-[24px] dark:text-white dark:mix-blend-difference sm:top-[15vw] lg:top-40">
           Мы поможем вам подобрать лучшие растения для вашего помещения,
           доставим их к вашей двери и поможем ухаживать за ними.
         </p>
         <div>
           <Link
             to="/catalog"
-            className="banner-link absolute m-0 focus:outline-none top-56 sm:top-64 py-2 px-5 sm:py-3 sm:px-8 rounded"
+            className="banner-link absolute top-56 m-0 rounded py-2 px-5 focus:outline-none sm:top-64 sm:py-3 sm:px-8"
             role="button"
           >
             Просмотреть каталог
